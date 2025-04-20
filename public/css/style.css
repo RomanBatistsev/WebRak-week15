@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+
+
+:root {
+    --primery-color: #333333;
+    --secondary-color: #fff4e6;
+    --font: "Merriweather", serif;
+    
+}
+* {
+ 
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F5F5F5;
+  font-family: var(--font);
+  color: var(--primery-color);
+}
+ 
+.container {
+    width: 50%;
+    margin: 0 auto;
+    
+        
+}
+header {
+    margin-top: 2rem;
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+}
+    .image-container {
+      
+        width: 150px; 
+        height: auto; 
+    } 
+    
+.image-my-foto {
+  transition: opacity 0.2s ease-in-out;
+}
+
+header h1 {
+    font-family: var(--font);
+    font-weight: 900;
+    font-size: 2rem;
+    padding: 1rem 0;
+    
+}
+
+.contacts {
+    
+   margin-top: 1rem; 
+}
+.contacts-marks {
+    flex: 1;
+    
+     list-style: none; 
+    
+color: var(--primery-color);
+.icon-spacing {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    font-size: 1,5rem;
+    color: #007bff;
+}
+
+}
+.section main {
+    width: 100;
+    height: auto;
+}
+.cv-main-haridus h2 {
+    font-family: var(--font);
+    font-size: 1.3rem;
+      
+}
+  .cv-main-studies-text {
+    list-style: none;
+    font-family: var(--font);
+    font-weight: auto;
+    font-size: 1rem;
+    
+    margin-top: 2rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+  }  
+  .cv-main-jobs-text  {
+    
+    list-style: none;
+    font-family: var(--font);
+    font-weight: auto;
+    font-size: 1rem;
+    margin-top: 2rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .cv-main-amet h3 {
+    list-style: none;
+    font-family: var(--font);
+    font-weight: auto;
+    font-size: 1,1rem;
+    
+    margin-top: 2rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+
+  }
+  .cv-main-skills-text {
+    list-style: none;
+    font-family: var(--font);
+    font-weight: auto;
+    font-size: 1rem;
+    margin-top: 2rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+
+  }
+  .cv-main-linguage-skills h2 {
+    font-family: var(--font);
+    font-size: 1.3rem;
+    margin-bottom: 2rem; 
+
+  }
+  .cv-main-computer-skills h2 {
+    font-family: var(--font);
+    font-size: 1.3rem;
+    margin-bottom: 2rem
+
+  }
+  .cv-main-lisences h2 {
+    font-family: var(--font);
+    font-size: 1.3rem;
+    margin-bottom: 2rem
+  }
+  .cv-main-resume h2 {
+    font-family: var(--font);
+    font-size: 1.3rem;
+    margin-bottom: 2rem
+  }
+  .cv-main-resume p {
+    font-family: var(--font);
+    font-size: 1.1rem;
+    margin-bottom: 2rem
+  }
+
+  hr {
+    width: 324px;
+    height: 4px;
+    border: none;
+    border-top: 4px solid;
+    border-color: #666666;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+  @media (max-width: 600px) {
+    .container {
+      width: 95%; 
+      padding: 1rem;
+    }
+    
+
+    .image-my-foto {
+        width: 100px; 
+    }
+    
+
+    
+
+}
+  

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Roman Batishchev</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/2ff8e1c3ac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <div class="container">
+        <h1> <%= myCV.name %></h1>
+
+
+        <header>
+            
+
+            <div class="contacts">
+            <ul class="contacts-marks">
+                
+                    <li><i class="fa-solid fa-user-tie icon-spacing"></i> <span id="bDateSex"></span></li>
+                    <li><i class="fa-solid fa-phone icon-spacing"></i> <span id="phoneNumber"></span></li>
+                    <li><i class="fa-solid fa-envelope icon-spacing"></i> <span id="eMail"></span></li>
+                    <li><i class="fa-solid fa-location-dot icon-spacing"></i> <span id="adress"></span></li>
+                    <li><a href="#"></a><i class="fa fa-linkedin-square icon-spacing" style="font-size:24px"></i></li>
+
+                
+            </ul>
+        </div>
+        <div class="image-container">
+            <div class="image-my-photo">
+                <img src="images/004.jpg" alt="my-photo" width="130px" height="160px">
+            </div>
+        </div>
+
+        </header>
+
+        
+        <div class="section main">
+            <ul class="cv-main-studies-text">
+            <h2 class="cv-main-haridus"><%= myCV.studies %></h2>
+            <li>Tallinna Tehnika Kõrgkool, 2021 - ...</li>
+            <li>Tartu Ülikool, Ajalugu, 1995 - 2006, magistri kraad </li>
+            <li>Kohtla-Järve 13. keskkool, 1984 - 1995</li>
+
+        </ul>
+        <ul class="cv-main-jobs-text">
+
+            <h2 class="cv-main-jobs"><%= myCV.jobs %></h2>
+
+           <h3 class="cv-main-amet">Ropka Autkool OÜ</h3>
+           <li>Sõiduõpetaja, 01.2021 - Tänaseni</li>
+           <h3 class="cv-main-amet">Autokool Kiirendus OÜ</h3>
+           <li>Sõiduõpetaja-lektor, 06.2018 - 11.2020</li>
+           <h3 class="cv-main-amet">Hydropower OÜ</h3>
+           <li>Laohoidja, 07.2017 - 11.2017</li>
+           <h3 class="cv-main-amet">Scandicon OÜ</h3>
+           <li>Ostujuht, 03.2017 - 07.2017</li>
+           <h3 class="cv-main-amet">Abrasiiv AS</h3>
+           <li>Müügijuht, 10.2010 - 03.2013, 03.2016 - 03.2017</li>
+           <h3 class="cv-main-amet">Polgent-G OÜ</h3>
+           <li>Müügispetsialist, 04.2013 - 02.2015</li>
+
+           <h3 class="cv-main-amet">VKG Oil OÜ</h3>
+           <li>Tootmisprotsessi operaator, 06.2010 - 10.2010</li>
+
+           <h3 class="cv-main-amet">Veeseadmed OÜ</h3>
+           <li>Müügiinsener, 03.2006 - 02.2009</li>
+
+           <h3 class="cv-main-amet">Ösel Foods AS</h3>
+           <li>Tootmiliini operaator, 02.2001 - 03.2006</li>
+        </ul>
+
+        <ul class="cv-main-skills-text">
+           <h2 class="cv-main-linguage-skills"><%= myCV.linguageSkills %></h2>
+           <li>Vene keel, emakeel</li>
+           <li>Eesti keel, C2 - rääkimine, B2 - kirjutamine</li>
+           <li>Inglise keel, A2 - rääkimine, A1 - kirjutamine</li>
+
+
+           <h2 class="cv-main-computer-skills"><%= myCV.computerSoftSkills %></h2>
+
+           <li> Op.sys - Windows</li>
+           <li>Kontoritarkvara - MS Office</li>
+           <li>Muu - Autocad Inventor, Hansa Raama, Power BI</li>
+
+
+
+           <h2 class="cv-main-lisences"><%= myCV.lisences %></h2>
+           <li>Kategooriad - ABCDE</li>
+        </ul>
+
+        
+
+           <h2 class="cv-main-resume"><%= myCV.resume %></h2>
+           <p>Autotehnika teadmistega sõiduõpetajana töötanud liikluse spetsialist 
+            otsib tööd tehnika ja(või) liikluskorraldusvaldkonnas.
+             Olen kohusetundlik, hea suhtleja, mitmekülgse töökogemusega.</p>
+
+            
+             
+             <hr>
+
+
+         
+
+
+
+
+
+
+        </div>
+
+
+     </div>
+
+    <script src="app.js"></script>
+    <script src="profile.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $.getJSON('data.json', function(data) {
+    console.log(data); // Проверьте данные
+    // Обработка данных
+  });
+</script>
+    
+</body>
+</html>
